@@ -1,0 +1,1074 @@
+﻿#sfbox
+{
+    background-color: #fff;
+}
+#sfbox.km-android .km-view {
+    -moz-box-direction: normal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#sfbox .km-content
+{
+    background-color: #fff;
+    background-image: none;
+    color: #000;
+}
+textarea
+{
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    font-size: 1.1rem;
+    padding: .6em;
+}
+input[type="text"], input[type="number"], input[type="datetime"], input[type="search"]
+{
+    border: 0;
+}
+#sfbox input[type="text"], #sfbox input[type="password"], #sfbox textarea, #sfbox select, #sfbox input[type="datetime"], #sfbox input[type="number"], #sfbox input[type="search"]
+{
+    color: #000;
+}
+#sfbox input[type="datetime"]
+{
+    line-height: normal;
+    font-family: inherit;
+}
+#sfbox.km-android .login-scrn input[type="text"], #sfbox.km-android .login-scrn input[type="password"]
+{
+    background-image: none;
+    border-bottom: 0;
+}
+#sfbox.km-android .k-dropdown .k-input
+{
+    color: #000;
+}
+#sfbox .km-load-more
+{
+    padding-top: 1rem;
+}
+/* Buttons */
+#sfbox .km-button
+{
+  background-color: #fff;
+  background: -webkit-linear-gradient(top, #fff, #e1e1e1);
+  background: linear-gradient(top, #fff, #e1e1e1);
+  color: #333;
+  border-color: #d6d6d6;
+}
+#sfbox .km-button .km-text
+{
+    text-shadow: none;
+}
+#sfbox .km-list .km-button
+{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    width: 100%;
+    text-shadow: none;
+    box-shadow: none;
+    text-align: left;
+}
+#sfbox .km-header .add-item.km-state-active, #sfbox .km-header .side-menu.km-state-active, #sfbox .km-header .refresh-list.km-state-active, #sfbox .search-input-wrp .clear-btn:active, .content-types-list > li:active, #sfbox .content-items-list > li:active,
+.doc-wrp:active, .img-wrp:active, .del-item:active, .take-photo:active
+{
+    opacity: 0.6;
+}
+#sfbox .km-content .km-button.km-state-active, .km-android .km-navbar .km-button.km-state-active, #sfbox .btn-save.km-state-active
+{
+    opacity: 0.8;
+}
+#sfbox .btn-save
+{
+    color: #fff;
+    background-color: #086fb8;
+    background: -webkit-linear-gradient(top, #12a1da, #086fb8);
+    background: linear-gradient(top, #12a1da, #086fb8);
+    border-color: #086fb8;
+}
+#sfbox.km-ios .btn-save
+{
+    box-shadow: none;
+}
+#sfbox .back-to-app .km-text
+{
+    display: inline-block;
+    max-width: 4.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 0;
+}
+#sfbox .side-menu
+{
+    display: block;
+    margin-top: .5rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: transparent url(../img/menu-icon.png) no-repeat 0 0;
+    background-size: cover;
+}
+#sfbox.km-android .side-menu
+{
+    margin-left: .8em;
+    margin-right: .5em;
+    margin-top: .6em;
+}
+#sfbox .add-item
+{
+    display: block;
+    margin-top: .4rem;
+    width: 2rem;
+    height: 2rem;
+    background: transparent url(../img/plus.png) no-repeat 0 0;
+    background-size: cover;
+    border: 0;
+    box-shadow: none;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#sfbox.km-android .add-item
+{
+    margin-left: .3em;
+    margin-right: .6em;
+    margin-top: .6em;
+}
+#sfbox .refresh-list
+{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .4rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background-image: none;
+}
+#sfbox.km-android .refresh-list
+{
+    margin-right: .5em;
+    margin-bottom: .7em;
+    margin-left: .5em;
+}
+#sfbox .refresh-list .km-text
+{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../img/refresh.png) no-repeat 0 0;
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#sfbox .take-photo
+{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .6rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background-image: none;
+}
+#sfbox .img-fld .take-photo
+{
+    vertical-align: top;
+}
+#sfbox.km-android .km-navbar .take-photo
+{
+    margin-right: 1em;
+    margin-left: 1em;    
+    margin-bottom: .5em;
+}
+#sfbox .take-photo .km-text
+{
+    display: inline-block;
+    width: 2rem;
+    height: 1.6rem;
+    background: url(../img/photo.png) no-repeat 0 0;
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.km-android .km-navbar .km-text
+{
+}
+.del-item
+{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: .3rem;
+    background: url(../img/remove.png) no-repeat 0 0;
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* Login screen */
+#sfbox .login-scrn .km-content
+{
+  background-color: #fff;
+  background: -webkit-linear-gradient(top, #fff, #e0e0e0);
+  background: linear-gradient(top, #fff, #e0e0e0);
+}
+#sfbox .login-scrn .km-content:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: " ";
+    width: 0;
+	height: 0;
+	border-top: 31rem solid #fff;
+	border-right: 22rem solid transparent;
+    opacity: 0.6;
+}
+#sfbox .logo
+{
+    margin: 5rem 4rem 2rem;
+}
+.logo img
+{
+    width: 100%;
+}
+.login-scrn .km-listinset, .btn-wrp
+{
+    margin: 2rem;
+}
+.login-scrn .km-button
+{
+    width: 100%;  
+    background-color: #fff;
+    background: -webkit-linear-gradient(top, #fff, #e0e0e0);
+    background: linear-gradient(top, #fff, #e0e0e0);
+    color: #000;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.km-android .login-scrn .km-list
+{
+    border: 1px solid #c1c1c1;
+    border-radius: 0;
+}
+.km-android .login-scrn .km-list > li
+{
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+#sfbox .login-scrn .km-list > li
+{
+    background-color: #fff;
+}
+.km-android .login-scrn .km-list label
+{
+    font-weight: bold;
+}
+#sfbox .login-scrn .km-list > li input
+{
+    width: 60%;
+}
+/* Header */
+#sfbox .km-navbar
+{
+    background-color: #fff;
+    background: -webkit-linear-gradient(top, #fff, #e0e0e0);
+    background: linear-gradient(top, #fff, #e0e0e0);
+}
+#sfbox.km-android .km-navbar
+{
+    border-top: 1px solid #d4d0c8;
+    background-color: #e0e0e0;
+    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+#sfbox.km-android .km-navbar .km-leftitem
+{
+    left: 0;
+    border-right: 1px solid #ccc;
+}
+#sfbox.km-android .km-navbar .km-rightitem
+{
+    right: 0;
+    border-left: 1px solid #ccc;
+}
+#sfbox .km-view-title
+{
+    color: #000;
+    text-shadow: none;
+    visibility: visible;
+    font-weight: normal;
+}
+#sfbox .km-view-title span
+{
+    display: block;
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#tabstrip-application-types .km-view-title span
+{
+    padding-right: 1rem;
+}
+.km-ios #tabstrip-application-types .km-view-title span
+{
+    padding-left: 3rem;   
+}
+.km-android #tabstrip-application-types .km-view-title span
+{
+    padding-left: 4rem;   
+}
+.km-ios #tabstrip-master-view .km-view-title span
+{
+    padding-left: 7rem; 
+    padding-right: 5.5rem;
+}
+.km-android #tabstrip-master-view .km-view-title span
+{     
+    padding-right: 3rem;
+    padding-left: 5rem; 
+}
+#sfbox .left-btn-sep .km-leftitem, #sfbox .right-btn-sep .km-rightitem
+{
+    height: 100%;
+}
+#sfbox .left-btn-sep .km-leftitem
+{
+    padding-right: .5em;
+    border-right: 1px solid #D6D6D6;
+}
+#sfbox .right-btn-sep .km-rightitem 
+{
+    padding-left: .5em;
+    border-left: 1px solid #D6D6D6;
+}
+.eula-wrp
+{
+    padding: 1rem;
+}
+/* Side Menu */
+.side-menu-view .to-all-apps
+{
+    margin-top: .55rem;
+    margin-right: .5rem;
+    float: right;
+}
+.side-menu-view .to-all-apps a
+{
+    display: inline-block;
+    background-color: #464646;
+    color: #fff;
+    padding: .3rem .5rem .4rem;
+    font-size: .8em;
+}
+.side-menu-view .to-all-apps a:active
+{
+    opacity: 0.5;
+}
+.side-menu-view
+{
+    width: 80%;
+    min-height: 100%;
+    background-color: #282828;
+}
+.side-menu-view h1, .side-menu-view h2
+{
+    margin: 0;
+    color: #999;
+    font-weight: bold;
+}
+.side-menu-view h1, .side-menu-view h2, .side-menu-view li
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.side-menu-view h1
+{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    font-size: 1.3em;
+}
+.side-menu-view h2
+{
+    padding-top: .35rem;
+    padding-bottom: .3rem;
+    font-size: .75em;
+    text-transform: uppercase;
+    background-color: #1b1b1b;
+    background: -webkit-linear-gradient(top, #323232, #1b1b1b);
+    background: linear-gradient(top, #323232, #1b1b1b);
+    border-bottom: 1px solid #000;
+}
+.side-menu-view ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+.side-menu-view li
+{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #000;
+}
+.side-menu-view li:active
+{
+    opacity: 0.8;
+}
+.side-menu-view > h1, .side-menu-view > h2, .side-menu-view li
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* App list */
+#sfbox.km-android .app-list
+{
+    margin: 0;
+}
+#sfbox .app-list > li
+{
+    margin-top: 1.65rem;
+    padding: 0 0 0 1.65rem;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.2;
+    border: 0;
+    background-color: transparent;
+}
+.app-list img
+{
+    width: 5rem;
+    height: 5rem;
+}
+.app-list .app-name, .app-list .app-module
+{
+    display: block;
+    font-weight: normal;
+    width: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.app-list .app-name
+{
+    font-size: 1.1em;
+}
+.app-list .app-module
+{
+    font-size: .8em;
+    font-style: normal;
+    color: #575757;
+}
+/* Search bar */
+.search-bar-wrp
+{
+    padding: 1rem;
+    background-color: #E9E9E9;
+}
+.search-bar-wrp .search-btn
+{
+    padding-top: .6em;
+    padding-bottom: .6em;
+    vertical-align: middle;
+}
+.km-android .search-bar-wrp .search-btn
+{
+    padding-left: .4em;
+    padding-right: .4em;
+}
+#sfbox .search-input-wrp
+{
+    display: inline-block;
+    position: relative;
+    height: 2rem;
+    border: 1px solid #bcbcbc;
+    border-radius: 1rem;
+    background-color: #fff;
+    vertical-align: middle;
+}
+ #sfbox .search-input-wrp input[type="input"]
+{
+    width: 11rem;
+    border: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+#sfbox.km-android .search-input-wrp input[type="input"]
+{
+    margin-top: 0;
+    color: #000;
+    padding-bottom: .2em;
+}
+#sfbox .search-input-wrp::before
+{
+    display: block;
+    content: " ";
+    position: absolute;
+    top: .5rem;
+    left: .7rem;
+    width: 1rem;
+    height: 1rem;
+    background: transparent url(../img/lens.png) no-repeat 0 0;
+    background-size: cover;
+}
+#sfbox .search-input-wrp .clear-btn
+{
+    display: block;
+    position: absolute;
+    top: .35rem;
+    right: .5rem;
+    padding: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    line-height: 1rem;
+    background: transparent url(../img/clear.png) no-repeat 0 0;
+    background-size: cover;
+    border: 0;
+    text-indent: -9999px;
+}
+/* Filter button group */
+.filter-group-wrp
+{
+    background-color: #e4e4e4;
+}
+.filter-group-wrp .km-button
+{
+    min-width: 6rem;
+    text-align: center;
+}
+#sfbox .filter-group-wrp .km-button.km-state-active
+{
+    background-color: #c3c3c3;
+    background-image: none;
+    opacity: 1;
+    border: 0;
+    box-shadow: none;
+}
+/* Content types list */
+.content-types-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.content-types-list > li
+{
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #c1c1c1;
+    position: relative;
+}
+.content-types-list > li:before, .item-details-btn
+{
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+    display: block;
+    content: " ";
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent url(../img/arrow.png) no-repeat 0 0;
+    background-size: cover;
+}
+.item-details-btn
+{
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-size: 1.5rem 1.5rem;
+    background-position: 1rem 1rem;
+}
+.content-types-list .content-type-name
+{
+    display: block;
+    margin-right: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.1em;
+}
+/* Content items list */
+#sfbox.km-android .content-items-list
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+#sfbox .content-items-list > li
+{
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #c1c1c1;
+    background-color: transparent;
+    line-height: .8em;
+    font-size: 1.4em;
+}
+.content-items-list .content-item-name
+{
+    display: block;
+    padding-right: 1.4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .9em;
+}
+.km-android .content-items-list .content-item-name
+{
+    font-weight: normal;
+    font-size: 1em;
+}
+.content-items-list .content-item-date, .content-items-list .content-item-distance
+{
+    color: #666;
+    font-weight: normal;
+    font-size: .6em;
+}
+.content-items-list .content-item-distance
+{
+    float: right;
+    margin-top: .2rem;
+}
+/* View single item */
+.item-actions
+{
+    box-sizing: border-box;
+    padding: .5rem 1rem; 
+    width: 100%;
+    height: 2.5rem;
+    text-align: right;
+    
+    background-color: #fff;
+    background: -webkit-linear-gradient(top, #fff, #e0e0e0);
+    background: linear-gradient(top, #fff, #e0e0e0);
+}
+.km-ios .item-actions
+{
+    border-top: 1px solid #d4d0c8;
+}
+.km-android .item-actions
+{
+    border-bottom: 1px solid #d4d0c8;
+}
+#sfbox .open-actions
+{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+
+    display: inline-block;
+    width: 1.96rem;
+    height: 1.5rem;
+    background: transparent url(../img/actions.png) no-repeat 0 0;
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: left;
+}
+.view-item-list, .add-img-list
+{
+    margin: 1.5rem;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+.view-item-list > li
+{
+    margin-top: 1rem;
+}
+.view-item-list > li:first-child
+{
+    margin-top: 0;
+}
+.view-item-list > .non-txt-fld + .non-txt-fld
+{
+    margin-top: .4rem;
+}
+.view-item-list .txt-short-fld h1
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+.view-item-list .txt-long-fld
+{
+    line-height: 1.6;
+}
+.view-item-list .addr-map
+{
+    margin-top: .5em;
+    margin-bottom: .3em;
+}
+.km-content .txt-long-fld p, .km-content .txt-long-fld h1, .km-content .txt-long-fld h2, .km-content .txt-long-fld h3, .km-content .txt-long-fld h4, .km-content .txt-long-fld h5, .km-content .txt-long-fld h6
+{
+    margin-left: 0;
+    margin-right: 0;    
+}
+.km-content .txt-long-fld quotation
+{
+    margin: 1em 1rem;    
+    font-style: italic;
+}
+.doc-list
+{
+    background-color: #f2f2f2;
+    border: 1px solid #e4e4e4;
+    border-radius: .5rem;
+    margin-top: .5em;
+    position: relative;
+}
+.doc-wrp
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .5rem 2rem .5rem .5rem;
+    border-top: 1px solid #e4e4e4;
+    font-weight: bold;
+    position: relative;
+}
+.doc-wrp:first-child
+{
+    border-top: 0;
+}
+.doc-wrp:before
+{
+    display: inline-block;
+    content: " ";
+    width: 1rem;
+    height: 1.2rem;
+    background: transparent url(../img/doc-icon.png) no-repeat 0 0;
+    background-size: cover;
+    vertical-align: top;
+    margin-right: .2rem;
+}
+.doc-wrp:after
+{
+    display: block;
+    content: " ";
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    top: .75rem;
+    right: .75rem;
+    border-top: 2px solid #919191;
+    border-right: 2px solid #919191;
+    
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    transform: rotate(45deg);
+}
+.img-list
+{
+    display: inline;
+}
+.view-item-list .img-wrp, .edit-item-list .img-wrp, .edit-img-list .img-wrp, .add-img-list .img-wrp
+{
+    display: inline-block;
+    margin: .5rem .5rem .5rem 0;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1;
+    overflow: hidden;
+    vertical-align: top;    
+    text-align: center;
+    background-color: #f2f2f2;
+}
+.add-img-list .img-wrp
+{
+    width: 4rem;
+    height: 4rem;    
+}
+.img-wrp img
+{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.slideshow-view > .km-content > .km-scroll-container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#scrollview-container, #PictureView
+{
+    height: 100%;
+}
+#PictureView
+{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+
+    -webkit-align-content: stretch;
+    -moz-align-content: stretch;
+    align-content: stretch;
+}
+#PictureView > div:first-child
+{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+#PictureView .img-wrp
+{
+    text-align: center;
+}
+#PictureView > .km-pages
+{
+    padding: 1rem .5rem;
+}
+/* Tags */
+.tag-wrp
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: .5rem .5rem .5rem 0;
+    background-color: #efefef;
+    border-radius: .8em;
+    padding: .3rem .8rem .4rem;
+    font-size: .8rem;
+}
+/* Edit single item */
+.edit-item-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+.edit-item-list > li
+{
+    padding: 1rem;
+    border-bottom: 1px solid #c1c1c1;
+    position: relative;
+}
+.edit-item-list > li .km-list > li
+{
+    padding-left: 0;
+    background-color: transparent;
+    font-size: 0.875em;
+    font-weight: normal;
+    min-height: 2.8rem;
+}
+.km-ios .edit-item-list > li
+{
+    padding: 1rem;
+}
+.km-android .edit-item-list > li
+{
+    padding: .6rem 1rem;
+}
+.edit-item-list .item-lbl
+{
+    vertical-align: top;
+    font-weight: bold;
+}
+.edit-item-list .addr-fld .add-addr
+{
+    color: #AEAEAE;
+    margin-left: .5em;
+}
+.edit-addr-fld .km-list > li
+{
+    background-color: transparent;
+}
+.km-ios .edit-addr-fld .km-list > li:last-child
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.edit-addr-fld .addr-map
+{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* inputs and labels */
+#sfbox .edit-item-list input[type="text"], #sfbox .edit-item-list input[type="password"], #sfbox .edit-item-list textarea, #sfbox .edit-item-list select, #sfbox .edit-item-list input[type="datetime"], #sfbox .edit-item-list input[type="number"]
+{
+    font-size: 1.05em;
+}
+.txt-short-fld .item-lbl, .select-fld .item-lbl, .date-fld .item-lbl, .bool-fld .item-lbl, .num-fld .item-lbl, .img-fld .item-lbl
+{
+    display: inline-block;
+    padding-top: .5rem;
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.img-fld .item-lbl
+{
+    padding-top: .7rem;    
+}
+.choice-lbl, #sfbox .edit-item-list input[type="radio"], #sfbox .edit-item-list input[type="checkbox"]
+{
+    vertical-align: middle;
+}
+.checkbox-fld .checkbox-list, .radio-fld .radio-list
+{
+    line-height: 1.6;
+}
+#sfbox .k-invalid-msg
+{
+    display: block;
+    margin-left: 20%;
+    padding-left: 10px;
+    color: #f00;
+}
+/* long text */
+.edit-item-list .txt-long-fld .item-lbl
+{
+    margin-bottom: .5rem;
+    display: block;
+}
+.edit-item-list .txt-long-fld textarea
+{
+    margin: 0 !important;
+    padding: 0;
+    width: 100% !important;
+    height: 5rem;
+}
+.editor-view > .km-content > .km-scroll-container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.editor-view > .km-content > .km-scroll-container .k-editor
+{
+    height: 100%;
+}
+.km-android .k-editor .k-editor-selectbox > span
+{
+    margin-top: 0
+}
+/* Delete button as SPAN tag */
+.km-ios .km-actionsheet > li > span 
+{
+    display: block;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.06, rgba(255, 255, 255, 0.45)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(1, rgba(100, 100, 100, 0)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.45) 6%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(100, 100, 100, 0));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.45) 6%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(100, 100, 100, 0));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.45) 6%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(100, 100, 100, 0));
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.45) 6%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(100, 100, 100, 0));
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    overflow: visible;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border: 1px solid #394d68;
+    border-color: #2f3740 #394d68 #375073;
+    background-color: #7185a2;
+    
+    font-size: 1.4em;
+    text-align: center;
+
+    overflow: hidden;
+    background: #fff;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(0, 0, 0, 0.3)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.98, rgba(0, 0, 0, 0)), color-stop(1, rgba(70, 70, 70, 0.5))), -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.2)), color-stop(1, rgba(0, 0, 0, 0.2)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2));
+    padding: .3em 0 .3em .6em;
+    color: #000;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: .6em;
+    -moz-border-radius: .6em;
+    -webkit-border-radius: .6em;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), 0 1px 1px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), 0 1px 1px rgba(255, 255, 255, .5);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    text-shadow: 0 1px #fff;
+}
+.km-ios .km-actionsheet > li > span:active, .km-ios .km-actionsheet > li > span:hover
+{
+    color: #fff;
+    background: #072398;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(0, 0, 0, 0.3)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.98, rgba(0, 0, 0, 0)), color-stop(1, rgba(70, 70, 70, 0.5))), -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(255, 255, 255, 0.6)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0.15)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -ms-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 98%, rgba(70, 70, 70, 0.5)), linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15));
+    background-clip: padding-box;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+.km-android .km-actionsheet>li>span {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #fff;
+    display: block;
+    line-height: 3rem;
+    border-width: 0 0 1px 0;
+    padding: 0 1em;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+.km-android .km-actionsheet>li:last-child>span {
+    border: 0;
+}
+.km-android .km-actionsheet>li>span:focus, .km-android .km-actionsheet>li>span:active {
+    background: #33b5e5;
+}
