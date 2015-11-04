@@ -7,9 +7,6 @@ var SitefinityBox = function () {
     this.moduleName = null;
     this.applicationId = null;
     this.serviceProfile = '/api/odata';
-    this.applicationsUrl = '/Sitefinity/Frontend/Services/MobileApp/MobileAppService.svc/';
-    this.dataServiceUrl = '/sitefinity/services/DynamicModules/Data.svc/';
-    this.repository = getRepository('sitefinity');
     this.errorMessage403 = "Your credentials are no longer valid. You may have been logged out from another user or your session might have expired. Please log in again.";
     
     var that = this;
@@ -89,7 +86,7 @@ SitefinityBox.prototype = {
     getSitefinityObject: function(){
         var options = {
                 url: this.viewModel.userData.website + this.serviceProfile,
-               /*SFParams: {
+                /*SFParams: {
                     provider: 'OpenAccessDataProvider',
                     culture: 'en'
                 }*/
@@ -185,69 +182,19 @@ SitefinityBox.prototype = {
                         dataProvider: that.sf
                     },
                     schema: {
-                       /* model: {
-                            id: "Id",
-                            fields: {
-                                Title: { type: "string" },
-                                Content: { type: "string" },
-                                Summary: { type: 'string' },
-                                UrlName: { type: 'string' }
-                            }
-                        }*/
                         data: function (response) {
                             return response;
                         }
-                    }/*,
-                    serverPaging: false,
-                    serverSorting: true,
-                    serverFiltering: true,
-                    pageSize: 10,
-                    page: 1,
-                    filter: {
-                        logic: "or",
-                        filters: [{ field: "Title", operator: "endswith", value: "Record" }, { field: "Title", operator: "startswith", value: "not" }],
-                    },
-                    sort: { field: 'Title', dir: 'desc' }*/
+                    }
                 });
-        /*new kendo.data.DataSource({
-                transport: {
-                    read: {
-                        url: this.viewModel.userData.website + this.applicationsUrl,
-                        dataType: 'json',
-                        beforeSend: function (request) {
-                            if (that.viewModel.userData.accessToken && that.viewModel.userData.accessToken != "") {
-                                request.setRequestHeader('Authorization', that.viewModel.userData.accessToken); //"WRAP access_token=\"" +   + "\""
-                            }
-                        },
-                        error: function (e) {
-                            logError('Error loading applications!');
-                        },
-                        complete: function (e) {
-                            if (e.status === 403) {
-                                showAlert(
-                                    that.errorMessage403,
-                                    'Sitefinity Box',
-                                    function () {
-                                        HideLoading();
-                                        that.app.navigate('#tabstrip-home');
-                                        that.viewModel.userData.accessToken = "";
-                                    }
-                                );
-                            }
-                        }
-                    }
-                },
-                schema: {
-                    data: function (response) {
-                        return response.Items;
-                    }
-                }
-            });*/
+        
         return dataSource;
     },
 
     downloadApplicationConfiguration: function (data) {
-        var appId = data.Id,
+        alert("TODO://");
+        return;
+        
             providerName = this.sf.sfParams ? this.sf.sfParams.provider : 'Default',
             that = this;
         this.moduleName = data.name;
@@ -264,7 +211,7 @@ SitefinityBox.prototype = {
         if (!this.scriptsLoaded) {
             $.getScript('scripts/moduleApp.js', function () {
                 that.scriptsLoaded = true;
-                moduleApp.init(that.app, that.moduleName, appId, that.viewModel.userData, that.dataServiceUrl, true, that.errorMessage403);
+                moduleApp.init(that.app, that.moduleName, null, that.viewModel.userData, true, that.errorMessage403);
                 moduleApp.loadApplication(that.sf, that.viewModel.userData, data, providerName, dataSource, function () {
                     that.app.navigate('moduleApp.html');
                 }, function (statusText) {
@@ -280,9 +227,9 @@ SitefinityBox.prototype = {
             });
         }
         else {
-            if (this.applicationId != appId) {
-                moduleApp.applicationId = appId;
-                moduleApp.loadApplication(that.sf, that.viewModel.userData, data, providerName, function () {
+            if (this.moduleName != data.name) {
+                this.moduleName = data.name;
+                moduleApp.loadApplication(that.sf, that.viewModel.userData, data, providerName, dataSource, function () {
                     that.app.navigate('#tabstrip-application-types');
                 }, function (statusText) {
                     showAlert(
